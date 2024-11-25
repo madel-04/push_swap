@@ -35,3 +35,7 @@ int	main(int argc, char **argv)
 	}
 	free_stack(&a);
 }
+/*
+Comprobamos que los argumentos sean correctos,
+separamos los números y comprobamos que no está ordenado.
+*/

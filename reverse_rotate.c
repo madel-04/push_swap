@@ -45,5 +45,5 @@ void	rrr(t_stack_node **a, t_stack_node **b, bool checker)
 	reverse_rotate(a);
 	reverse_rotate(b);
 	if (!checker)
-		write(1, "rrrb\n", 4);
+		write(1, "rrr\n", 4);
 }

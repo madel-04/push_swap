@@ -62,12 +62,6 @@ static void	set_target_node(t_stack_node *a,
 	}
 }
 
-/*
-Set the prices to push the node
-from b -> a
-The price checks for the relative positions in the stack
-for every node, setting the respective price
-*/
 static void	set_price(t_stack_node *a, t_stack_node *b)
 {
 	int	len_a;
@@ -89,8 +83,8 @@ static void	set_price(t_stack_node *a, t_stack_node *b)
 }
 
 /*
-Flag the cheapest node in the current
-stacks configurations
+Set the cheapest node in the current
+stacks
 */
 void	set_cheapest(t_stack_node *b)
 {

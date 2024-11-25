@@ -86,3 +86,6 @@ char	**ft_split(char *str, char sep)
 	v_str[i] = NULL;
 	return (v_str);
 }
+/*
+Le quitaría el continue por un bucle por claridad
+*/

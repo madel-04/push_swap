@@ -15,8 +15,10 @@
 static void	rotate(t_stack_node **stack)
 {
 	t_stack_node	*last_node;
+	int				len;
 
-	if (stack == NULL || *stack == NULL)
+	len = stack_len(*stack);
+	if (stack == NULL || *stack == NULL || 1 == len)
 		return ;
 	last_node = find_last_node(*stack);
 	last_node->next = *stack;
@@ -45,5 +47,5 @@ void	rr(t_stack_node **a, t_stack_node **b, bool checker)
 	rotate(a);
 	rotate(b);
 	if (!checker)
-		write (1, "ra\n", 3);
+		write (1, "rr\n", 3);
 }

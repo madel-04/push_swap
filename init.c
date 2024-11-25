@@ -55,7 +55,7 @@ void	stack_init(t_stack_node **a, char **av, bool flag_ag_2)
 		if (error_repetition(*a, (int)nbr))
 			error_free(a, av, flag_ag_2);
 		append_node(a, (int)nbr);
-		i++;
+		++i;
 	}
 	if (flag_ag_2)
 		free_matrix(av);
